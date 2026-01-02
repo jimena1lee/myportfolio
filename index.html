@@ -1,4 +1,3 @@
-<html>
 <!doctype html>
 <html lang="ko">
 <head>
@@ -37,6 +36,9 @@
     .kpi{display:flex;gap:10px;flex-wrap:wrap}
     .kpi .pill{border-color:rgba(96,165,250,.28)}
     .quote{margin-top:18px;padding:14px 16px;border-left:3px solid var(--accent);background:rgba(96,165,250,.06);border-radius:12px;color:var(--text)}
+    .jimin-photo{margin:12px 0 14px}
+    .jimin-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+    .jimin-photo .caption{margin-top:6px;font-size:13px;color:var(--muted);text-align:center}
     footer{margin-top:26px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
     @media (max-width:720px){
       h1{font-size:34px}
@@ -104,8 +106,15 @@
 
       <article class="card span-5">
         <h2>Hobbies & Life</h2>
+
+        <!-- Jimin Photo -->
+        <div class="jimin-photo">
+          <img src="jimin.jpg" alt="Jimin the dog" />
+          <p class="caption">🐶 Jimin (지민) — 관찰과 기록의 시작</p>
+        </div>
+
         <ul>
-          <li>🐶 <b>Jimin(지민)</b>: 산책/훈련/사회화 기록 — 관찰→가설→검증 루틴</li>
+          <li><b>Jimin(지민)</b>: 산책·훈련·사회화 기록 — 관찰 → 가설 → 검증 루틴</li>
         </ul>
         <div class="quote">
           지민과의 훈련 기록은 행동 → 반응 → 결과를 반복 관찰하는 과정이었고,
@@ -134,4 +143,3 @@
   </script>
 </body>
 </html>
-```
